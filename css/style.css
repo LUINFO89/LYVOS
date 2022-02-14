@@ -1,0 +1,45 @@
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+.lh-sm {
+  width: 900px;
+  text-align: center;
+  margin-left: 200px;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar {
+  background: rgb(28, 167, 121);
+}
+.navbar {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(28, 167, 121);
+}
+.navbar a {
+  color: aliceblue;
+}
+main {
+  width: auto;
+  height:auto;
+  background: rgb(248, 244, 244);
+}
+.contenido {
+  padding-top: 10%;
+}
+.wrapper {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  color: rgb(5, 56, 100);
+}
+footer{
+    background: rgb(28, 167, 121);
+    margin-top: 15%;
+}
