@@ -56,4 +56,21 @@ footer {
   margin-top: 15%;
 }
 
+/*administrador*/
+#section-perfil {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: rgb(5, 56, 100);
+}
 
+ul{
+  margin-top: 80%;
+  color: beige;
+}
+
+#section-user{
+  width: 100%;
+  height: 100px;
+  background: rgb(11, 209, 11);
+}
