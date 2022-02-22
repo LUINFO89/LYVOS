@@ -111,4 +111,10 @@
     .card-home:hover{
         transform: scale(1.04);
     }
-    
+    @media screen and (max-width: 879px) {
+        .navBar{
+            display: none;
+            margin: 0 auto;
+        }
+        
+        }
