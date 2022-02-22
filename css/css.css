@@ -116,5 +116,13 @@
             display: none;
             margin: 0 auto;
         }
+        .container-fluid{
+            margin-top: 50px;
+            margin-left: -10%;
+            width:400px;
+        }
+        header{
+            margin-left: -25%;
+        }
         
         }
