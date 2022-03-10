@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <!--- stylesheet CSS --->
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
   </head>
   <body>
@@ -25,6 +25,8 @@
             src="img/logo.jpg"
             alt="logo"
             class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4"
+            id="logocol"
+          
           />
           <hr class="border border-white" />
 
@@ -100,7 +102,7 @@
             <div class="card">
               <div class="card-body">
                 <!-- Inicio contenido main -->
-                <h1>Colocar Contenido aquí</h1>
+                <h1>Solicitud de  Documentos </h1>
 
                 <div class="input-group mb-3">
                   <input
@@ -123,28 +125,48 @@
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Tipo</th>
+                      <th scope="col">Estado</th>
+                       <th scope="col">Acción</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td>Certificación Estudios 2022</td>
+                      <td>Pendiente</td>
+                      <td><button type="button" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-success">Editar</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                      <td>Recibo de pago Pensión Mes mayo</td>
+                      <td>Entregado</td>
+                      <td><button type="button" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-success">Editar</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
+                      <td>Larry the Bird</td>
+                      <td>Recibo de paz y salvo</td>
+                      <td>Entregado</td>
+                      <td><button type="button" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-success">Editar</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Larry the Bird</td>
+                      <td>Boletin Primer Periodo</td>
+                      <td>Pendiente</td>
+                      <td><button type="button" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-success">Editar</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
                     </tr>
                   </tbody>
                 </table>
