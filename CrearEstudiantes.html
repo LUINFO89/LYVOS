@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil de Usuario</title>
+  <!--- Icon Font Awason --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!--- stylesheet CSS --->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+                <!-- Menú de navegación -->
+                <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
+                  <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
+                  <hr class="border border-white">
+  
+                  <ul class="nav flex-column">
+                      <li class="nav-item ">
+                          <a class="nav-link " href="homeBase.html">
+                              <i class="fas fa-home"></i>
+                              Inicio
+                          </a>
+                      </li>
+                      
+                      <li class="nav-item">
+                          <a class="nav-link" href="SolicitarFactura.html">
+                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+                              Solicitar Documentos
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="GenerarDocumentos.html">
+                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+                              Generar Documentos
+                          </a>
+                      </li>
+                      
+  
+                      <li class="nav-item">
+                          <a class="nav-link" href="ServiciosProductos.html">
+                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+                              Servicios o productos
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="VerSolictudes.html">
+                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+                              Ver Solicitudes y actualización de estados
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="CrearEstudiantes.html">
+                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+                              Crear Estudiantes
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="PerfilUsuario.html">
+                              <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
+                              Perfil de usuarios
+                          </a>
+                      </li>
+  
+                  </ul>
+                  <hr class="border border-white">
+  
+              </nav>
+              <!-- Fin menú de navegación -->
+
+      <!-- Cabecera de la página -->
+      <header class="col-lg-9 text-white p-0 fixed-top" style="margin-left: 25%">
+        <div class="header-content bg-green ms-lg-3 p-lg-2 text-end">
+          <div class="me-lg-5">
+            <span class="me-lg-2 fs-5">name@colegiopsicopedagogicoguilford.com</span>
+            <a class="icon-session" href="login.html">
+              <i class="fas fa-power-off"></i>
+              Cerrar Sesión
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Fin Cabecera de la página -->
+      <!-- Contenido de la pagina -->
+      <main class="col-lg-9 mt-lg-5 p-lg-0" style="margin-left: 25%">
+        <div class="m-lg-3 mt-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <!-- Inicio contenido main -->
+              <div class="container bootstrap snippet">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <h1>Crear Estudiantes</h1>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <!--/col-3-->
+                  <div class="col-sm-9">
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="home">
+                        <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="first_name">
+                                <h4>Tipo de documento</h4>
+                              </label>
+                              
+                              <input type="text" class="form-control" name="first_name" id="first_name"
+                                placeholder="primer nombre" title="Ingrese su primer Nombre aqui.">
+                            </div>
+                            <div class="col-xs-6">
+                              <label for="first_name">
+                                <h4>Identificación</h4>
+                              </label>
+                              <input type="text" class="form-control" name="first_name" id="first_name"
+                                placeholder="primer nombre" title="Ingrese su primer Nombre aqui.">
+                            </div>
+                            <div class="col-xs-6">
+                              <label for="first_name">
+                                <h4>Primer Nombre</h4>
+                              </label>
+                              <input type="text" class="form-control" name="first_name" id="first_name"
+                                placeholder="primer nombre" title="Ingrese su primer Nombre aqui.">
+                            </div>
+                          </div>
+                          <div class="form-group">
+
+                            <div class="col-xs-6">
+                              <label for="last_name">
+                                <h4>Segundo Nombre</h4>
+                              </label>
+                              <input type="text" class="form-control" name="last_name" id="last_name"
+                                placeholder="segundo nombre" title="Ingrese su Segunda Nombre aqui.">
+                            </div>
+                          </div>
+
+
+                          <div class="form-group">
+                            <div class="col-xs-6">
+                              <label for="mobile">
+                                <h4>Mobile</h4>
+                              </label>
+                              <input type="text" class="form-control" name="mobile" id="mobile"
+                                placeholder="enter mobile number" title="enter your mobile number if any.">
+                            </div>
+                          </div>
+                          <div class="form-group">
+
+                            <div class="col-xs-6">
+                              <label for="email">
+                                <h4>Email</h4>
+                              </label>
+                              <input type="email" class="form-control" name="email" id="email"
+                                placeholder="you@email.com" title="enter your email.">
+                            </div>
+                          </div>
+                          <div class="form-group">
+
+                            <div class="col-xs-6">
+                              <label for="email">
+                                <h4>Dirección</h4>
+                              </label>
+                              <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                title="enter a location">
+                            </div>
+                          </div>
+                          <div class="form-group">
+
+                            <div class="col-xs-6">
+                              <label for="password">
+                                <h4>Password</h4>
+                              </label>
+                              <input type="password" class="form-control" name="password" id="password"
+                                placeholder="password" title="enter your password.">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="col-xs-12">
+                              <br>
+                              <button class="btn btn-lg btn-success" type="submit"><i
+                                  class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                              <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                Reset</button>
+                            </div>
+                          </div>
+                        </form>
+
+                        <hr>
+
+                      </div>
+                    </div>
+                    <!--/tab-pane-->
+                  </div>
+                  <!--/tab-content-->
+
+                </div>
+                <!--/col-9-->
+              </div>
+              <!--/row-->
+
+              <!-- Fin contenido main -->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Fin contenido de la pagina-->
+    </div>
+  </div>
+</body>
+
+</html>
