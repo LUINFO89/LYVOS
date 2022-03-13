@@ -66,3 +66,12 @@
     margin: 16px 0;
     font-size: 24px;
   }
+  select{
+    width: 100%;
+    background: #60cdba;
+    border: none;
+    padding: 12px;
+    color: rgb(4, 11, 26);
+    margin: 16px 0;
+    font-size: 24px;
+  }

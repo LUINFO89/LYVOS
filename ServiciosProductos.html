@@ -2,98 +2,299 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Base</title>
-    <!--- Icon Font Awason --->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!--- stylesheet CSS --->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/css.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Servicios o productos</title>
+  <!--- Icon Font Awason --->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!--- stylesheet CSS --->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="css/styleFrm.css" />
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Menú de navegación -->
+      <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
+        <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4" />
+        <hr class="border border-white" />
 
-                  <!-- Menú de navegación -->
-                  <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
-                    <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
-                    <hr class="border border-white">
-    
-                    <ul class="nav flex-column">
-                        <li class="nav-item ">
-                            <a class="nav-link " href="homeBase.html">
-                                <i class="fas fa-home"></i>
-                                Inicio
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="SolicitarFactura.html">
-                                <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                                Solicitar Documentos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="GenerarDocumentos.html">
-                                <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                                Generar Documentos
-                            </a>
-                        </li>
-                        
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="ServiciosProductos.html">
-                                <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                                Servicios o productos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="VerSolictudes.html">
-                                <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                                Ver Solicitudes y actualización de estados
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="CrearEstudiantes.html">
-                                <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                                Crear Estudiantes
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="PerfilUsuario.html">
-                                <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
-                                Perfil de usuarios
-                            </a>
-                        </li>
-    
-                    </ul>
-                    <hr class="border border-white">
-    
-                </nav>
-                <!-- Fin menú de navegación -->
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="homeBase.html">
+              <i class="fas fa-home"></i>
+              Inicio
+            </a>
+          </li>
 
-            <!-- Cabecera de la página -->
-            <header class="col-lg-9 text-white p-0 fixed-top " style="margin-left: 25%;">
-                <div class="header-content bg-green ms-lg-3 p-lg-2 text-end">
-                    <div class="me-lg-5 ">
-                        <span class="me-lg-2 fs-5">yajairaposada@colegiopsicopedagogicoguilford.com</span>
-                        <a class="icon-session" href="login.html">
-                            <i class="fas fa-power-off"></i>
-                            Cerrar Sesión
-                        </a>
-                    </div>
-                </div>
-            </header>
-            <!-- Fin Cabecera de la página -->
+          <li class="nav-item">
+            <a class="nav-link" href="SolicitarFactura.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Solicitar Documentos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GenerarDocumentos.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Generar Documentos
+            </a>
+          </li>
 
-            <main class="col-lg-9 col-12 mt-lg-5  p-lg-0" style="margin-left: 25%;">
-                
-            </main>
+          <li class="nav-item">
+            <a class="nav-link" href="ServiciosProductos.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Servicios o productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="VerSolictudes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Ver Solicitudes y actualización de estados
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CrearEstudiantes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Crear Estudiantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PerfilUsuario.html">
+              <i class="fas fa-user-circle"></i>
+              <!-- Camnbiar icono en Font Awason -->
+              Perfil de usuarios
+            </a>
+          </li>
+        </ul>
+        <hr class="border border-white" />
+      </nav>
+      <!-- Fin menú de navegación -->
+
+      <!-- Cabecera de la página -->
+      <header class="col-lg-9 text-white p-0 fixed-top" style="margin-left: 25%">
+        <div class="header-content bg-green ms-lg-3 p-lg-2 text-end">
+          <div class="me-lg-5">
+            <span class="me-lg-2 fs-5">name@colegiopsicopedagogicoguilford.com</span>
+            <a class="icon-session" href="login.html">
+              <i class="fas fa-power-off"></i>
+              Cerrar Sesión
+            </a>
+          </div>
         </div>
+      </header>
+      <!-- Fin Cabecera de la página -->
+      <!-- Contenido de la pagina -->
+      <!-- Contenido de la pagina -->
+      <main class="col-lg-9 mt-lg-5 p-lg-0" style="margin-left: 25%">
+        <div class="m-lg-3 mt-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <!-- Inicio contenido main -->
+              <h1>Crear Servicios y Productos</h1>
+
+              <div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Ingrese la busqueda"
+                  aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                  Button
+                </button>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                Crear Servicios
+              </button>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Iva</th>
+                    <th scope="col">Acción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Matricula Primero</td>
+                    <td>$200.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Matricula Segundo</td>
+                    <td>$300.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Matricula Tercero</td>
+                    <td>$400.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Matricula Cuarto</td>
+                    <td>$500.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Matricula Quinto</td>
+                    <td>$600.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Pensión Primero</td>
+                    <td>$102.0000</td>
+                    <td>19%</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+              <!-- Fin contenido main -->
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="ModalCrear" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-gradient">
+              <div class="modal-body ">
+
+
+                <div class="container bootstrap snippet">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h1>Crear Servicios y Productos</h1>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <!--/col-3-->
+                    <div class="col-sm-9">
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                          <hr>
+                          <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+                              <div class="col-xs-6">
+                                <label for="first_name">
+                                  <h4>Nombre del producto </h4>
+                                </label>
+
+                                <input type="text" class="form-control" name="first_name" id="producto"
+                                  placeholder="Nombre del producto" title="Nombre del producto.">
+                              </div>
+                              <div class="col-xs-6">
+                                <label for="first_name">
+                                  <h4>Precio </h4>
+                                </label>
+                                <input type="text" class="form-control" name="first_name" id="precio"
+                                  placeholder="Ingrese el precio" title="Ingrese el precio">
+                              </div>
+                              <div class="col-xs-6">
+                                <label for="first_name">
+                                  <h4>Iva </h4>
+                                </label>
+                                <input type="text" class="form-control" name="first_name" id="iva"
+                                  placeholder="Ingrese el iva" title="Ingrese el iva">
+                              </div>
+                             
+                            </div>
+                        
+                        
+
+                            <div class="form-group">
+                              <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i
+                                    class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                  Reset</button>
+                              </div>
+                            </div>
+                          </form>
+
+                          <hr>
+
+                        </div>
+                      </div>
+                      <!--/tab-pane-->
+                    </div>
+                    <!--/tab-content-->
+
+                  </div>
+                  <!--/col-9-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Fin contenido de la pagina-->
+      <!-- Fin contenido de la pagina-->
     </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </body>
 
 </html>

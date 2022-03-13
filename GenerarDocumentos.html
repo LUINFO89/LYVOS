@@ -5,74 +5,75 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ver Solicitudes</title>
+  <title>Generar Factura</title>
   <!--- Icon Font Awason --->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!--- stylesheet CSS --->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <link rel="stylesheet" href="css/styleFrm.css">
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
-                <!-- Menú de navegación -->
-                <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
-                  <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
-                  <hr class="border border-white">
-  
-                  <ul class="nav flex-column">
-                      <li class="nav-item ">
-                          <a class="nav-link " href="homeBase.html">
-                              <i class="fas fa-home"></i>
-                              Inicio
-                          </a>
-                      </li>
-                      
-                      <li class="nav-item">
-                          <a class="nav-link" href="SolicitarFactura.html">
-                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                              Solicitar Documentos
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="GenerarDocumentos.html">
-                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                              Generar Documentos
-                          </a>
-                      </li>
-                      
-  
-                      <li class="nav-item">
-                          <a class="nav-link" href="ServiciosProductos.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Servicios o productos
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="VerSolictudes.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Ver Solicitudes y actualización de estados
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="CrearEstudiantes.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Crear Estudiantes
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="PerfilUsuario.html">
-                              <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
-                              Perfil de usuarios
-                          </a>
-                      </li>
-  
-                  </ul>
-                  <hr class="border border-white">
-  
-              </nav>
-              <!-- Fin menú de navegación -->
+      <!-- Menú de navegación -->
+      <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
+        <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
+        <hr class="border border-white">
+
+        <ul class="nav flex-column">
+          <li class="nav-item ">
+            <a class="nav-link " href="homeBase.html">
+              <i class="fas fa-home"></i>
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="SolicitarFactura.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Solicitar Documentos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GenerarDocumentos.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Generar Documentos
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="ServiciosProductos.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Servicios o productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="VerSolictudes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Ver Solicitudes y actualización de estados
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CrearEstudiantes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Crear Estudiantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PerfilUsuario.html">
+              <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
+              Perfil de usuarios
+            </a>
+          </li>
+
+        </ul>
+        <hr class="border border-white">
+
+      </nav>
+      <!-- Fin menú de navegación -->
 
       <!-- Cabecera de la página -->
       <header class="col-lg-9 text-white p-0 fixed-top" style="margin-left: 25%">
@@ -85,7 +86,6 @@
             </a>
           </div>
         </div>
-        
       </header>
       <!-- Fin Cabecera de la página -->
       <!-- Contenido de la pagina -->
@@ -94,85 +94,313 @@
           <div class="card">
             <div class="card-body">
               <!-- Inicio contenido main -->
-              <h1>Generar Documentos <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalCrear">
-                Ver Solicitudes 
-              </button></h1>
-              
-              <form>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Numero de Solicitud</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Identificación del Cliente</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Nombre del cliente</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el nombre">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Telefono del cliente</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el Telefono">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Tipo de servicio o producto</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Certificados de estudio</option>
-                    <option>Certificado de notas</option>
-                    <option>Certificacion Laboral</option>
-                    <option>Recibo de pago Matricula</option>
-                    <option>Recibo de pago Pensión</option>
-                    <option>Abono de pago Matricula</option>
-                    <option>Abono de pago Pensión</option>
+              <h1>Generar Documentos</h1>
 
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect2">Precio del servicio</label>
-                  <select class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Observaciones</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <br>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese la busqueda"
+                  aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                  Button
+                </button>
 
-                <button type="button" class="btn btn-primary">Guardar Factura</button>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                Crear Facturas
+              </button>
 
-              </form>
 
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Acción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Certificación Estudios 2022</td>
+                    <td>Pendiente</td>
+                    <td>
+                      <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                        Crear
+                      </button-->
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Recibo de pago Pensión Mes mayo</td>
+                    <td>Entregado</td>
+                    <td>
+                      <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                        Crear
+                      </button-->
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Recibo de paz y salvo</td>
+                    <td>Entregado</td>
+                    <td>
+                      <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                        Crear
+                      </button-->
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Larry the Bird</td>
+                    <td>Boletin Primer Periodo</td>
+                    <td>Pendiente</td>
+                    <td>
+                      <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
+                        Crear
+                      </button-->
+                      <button type="button" class="btn btn-success">
+                        Editar
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
               <!-- Fin contenido main -->
             </div>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="ModalCrear" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-gradient">
+
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div id="ui-view" data-select2-id="ui-view">
+                    <div>
+                      <div class="card">
+                        <div class="card-header">Factura Numero:
+                          <strong><input type="text"></strong>
+                          <a class="btn btn-sm btn-secondary float-right mr-1 d-print-none" href="#"
+                            onclick="javascript:window.print();" data-abc="true">
+                            <i class="fa fa-print"></i> Print</a>
+                          <a class="btn btn-sm btn-info float-right mr-1 d-print-none" href="#" data-abc="true">
+                            <i class="fa fa-save"></i> Save</a>
+                        </div>
+                        <div class="card-header">Numero de Solicitud: <strong><input type="text"></strong></div>
+  
+                        <div class="card-body">
+                          <div class="row mb-4">
+                            <div class="col-sm-2">
+                              <h6 class="mb-2">Para:</h6>
+                              <div>
+                                <strong>Identificacion:</strong>
+                              </div>
+                              <div>Nombres:</div>
+                              <div>Apellidos:</div>
+                              <div>Direccion:</div>
+                              <div>Email:</div>
+                              <div>Telefono:</div>
+  
+  
+  
+                            </div>
+                            <div class="col-sm-4">
+                              <h6 class="mb-2">Datos del cliente</h6>
+  
+                              <div>
+                                <strong><input name="id" id="identificacion" type="text" placeholder="Id"></strong>
+                              </div>
+                              <div><input name="nombres" id="nombre" type="text" placeholder="Nombres"></div>
+                              <div><input name="apellidos" id="apellidos" type="text" placeholder="Apellidos"></div>
+                              <div><input name="direccion" id="direccion" type="text" placeholder="Direccion"></div>
+                              <div><input name="email" id="email" type="text" placeholder="Email"></div>
+                              <div><input name="telefono" id="telefono" type="text" placeholder="Telefono"></div>
+  
+  
+                            </div>
+                            <div class="col-sm-6">
+                              <h6 class="mb-3">Detalles:</h6>
+                              <div>Factura #:
+                                <strong>#BBB-10010110101938</strong>
+                              </div>
+                              <div>April 30, 2019</div>
+                              <div>Direccion: NYC09090390</div>
+                              <div>Email: guilford@gmail.com</div>
+                              <div>
+                                <strong>Total: $7.477,36</strong>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-responsive-sm">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="center">#</th>
+                                  <th>Item</th>
+                                  <th>Descripcion</th>
+                                  <th class="center">Cantidad</th>
+                                  <th class="right">Precio Unitario</th>
+                                  <th class="right">Total</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="center"><select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">0</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+  
+                                    </select></td>
+                                  <td class="left">
+                                    <select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">Certificados de estudio</option>
+                                      <option>Certificado de notas</option>
+                                      <option>Certificacion Laboral</option>
+                                      <option>Recibo de pago Matricula</option>
+                                      <option>Recibo de pago Pensión</option>
+                                      <option>Abono de pago Matricula</option>
+                                      <option>Abono de pago Pensión</option>
+  
+                                    </select>
+  
+                                  </td>
+  
+                                  <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
+                                  </td>
+  
+                                  <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
+                                  <td class="center"><input name="precio" id="cantidad" type="text" size="10" .></td>
+                                  <td class="center">$999,00</td>
+                                </tr>
+                                <tr>
+                                  <td class="center"><select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">0</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+  
+                                    </select></td>
+                                  <td class="left">
+                                    <select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">Certificados de estudio</option>
+                                      <option>Certificado de notas</option>
+                                      <option>Certificacion Laboral</option>
+                                      <option>Recibo de pago Matricula</option>
+                                      <option>Recibo de pago Pensión</option>
+                                      <option>Abono de pago Matricula</option>
+                                      <option>Abono de pago Pensión</option>
+  
+                                    </select>
+  
+                                  </td>
+  
+                                  <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
+                                  </td>
+  
+                                  <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
+                                  <td class="center"><input name="precio" id="cantidad" type="text" size="10" .></td>
+                                  <td class="center">$999,00</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4 col-sm-5">
+                              <strong>Observaciones:</strong>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </div>
+                            <div class="col-lg-4 col-sm-5 ml-auto">
+                              <table class="table table-clear">
+                                <tbody>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Subtotal</strong>
+                                    </td>
+                                    <td class="right">$8.497,00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Discount (20%)</strong>
+                                    </td>
+                                    <td class="right">$1,699,40</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>VAT (10%)</strong>
+                                    </td>
+                                    <td class="right">$679,76</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Total</strong>
+                                    </td>
+                                    <td class="right">
+                                      <strong>$7.477,36</strong>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <a class="btn btn-success" href="#" data-abc="true">
+                                <i class="fa fa-usd"></i> Guardar Factura</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+         <!-- FIN Modal -->
       </main>
       <!-- Fin contenido de la pagina-->
     </div>
   </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </body>
 
 </html>

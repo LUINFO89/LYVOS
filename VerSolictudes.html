@@ -89,12 +89,13 @@
       </header>
       <!-- Fin Cabecera de la página -->
       <!-- Contenido de la pagina -->
+           <!-- Contenido de la pagina -->
       <main class="col-lg-9 mt-lg-5 p-lg-0" style="margin-left: 25%">
         <div class="m-lg-3 mt-lg-3">
           <div class="card">
             <div class="card-body">
               <!-- Inicio contenido main -->
-              <h1>Ver solicitud y actualización de estados </h1>
+              <h1>Ver documentos y actualización de estados</h1>
 
               <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Ingrese la busqueda"
@@ -105,7 +106,7 @@
 
               </div>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
-                Crear
+                Crear Solicitud
               </button>
 
 
@@ -130,7 +131,7 @@
                         Crear
                       </button-->
                       <button type="button" class="btn btn-success">
-                        Editar
+                        Editar Estado
                       </button>
                       <button type="button" class="btn btn-danger">
                         Delete
@@ -147,7 +148,8 @@
                         Crear
                       </button-->
                       <button type="button" class="btn btn-success">
-                        Editar
+                        Editar Estado
+
                       </button>
                       <button type="button" class="btn btn-danger">
                         Delete
@@ -164,7 +166,8 @@
                         Crear
                       </button-->
                       <button type="button" class="btn btn-success">
-                        Editar
+                        Editar Estado
+
                       </button>
                       <button type="button" class="btn btn-danger">
                         Delete
@@ -181,11 +184,12 @@
                         Crear
                       </button-->
                       <button type="button" class="btn btn-success">
-                        Editar
+                        Editar Estado
+
                       </button>
                       <button type="button" class="btn btn-danger">
                         Delete
-                      </button>
+                        </button>
                     </td>
                   </tr>
                 </tbody>
@@ -202,33 +206,163 @@
             <div class="modal-content bg-gradient">
 
               <div class="modal-body">
-                <section class="form-register">
-                  <h4>Solicitud de Documentos</h4>
+                <div class="container-fluid">
+                  <div id="ui-view" data-select2-id="ui-view">
+                    <div>
+                      <div class="card">
+                        <div class="card-header">Numero de Solicitud:
+                          <strong><input type="text"></strong>
+                          <a class="btn btn-sm btn-secondary float-right mr-1 d-print-none" href="#"
+                            onclick="javascript:window.print();" data-abc="true">
+                            <i class="fa fa-print"></i> Print</a>
+                          <a class="btn btn-sm btn-info float-right mr-1 d-print-none" href="#" data-abc="true">
+                            <i class="fa fa-save"></i> Save</a>
+                        </div>
 
-                  <input class="controls" type="text" name="id" id="identificacion"
-                    placeholder="Ingrese su Identificación">
-                  <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-                  <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-                  <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su Correo">
-                  <input class="controls" type="text" name="Documento" id="Documento"
-                    placeholder="Ingrese el Documento a solicitar">
-                  <input class="controls" type="date" name="fecha" id="fecha"
-                    placeholder="Ingrese la fecha de solicicitud">
-                  <input class="controls" type="text" name="Obervaciones" id="Obervaciones" placeholder="Obervaciones">
+                        <div class="card-body">
+                          <div class="row mb-4">
+                            <div class="col-sm-2">
+                              <h6 class="mb-2">Para:</h6>
+                              <div>
+                                <strong>Identificacion:</strong>
+                              </div>
+                              <div>Nombres:</div>
+                              <div>Apellidos:</div>
+                              <div>Direccion:</div>
+                              <div>Email:</div>
+                              <div>Telefono:</div>
 
-                  <input class="botons" type="submit" value="Guardar">
 
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
-                </section>
+
+                            </div>
+                            <div class="col-sm-4">
+                              <h6 class="mb-2">Datos del cliente</h6>
+
+                              <div>
+                                <strong><input name="id" id="identificacion" type="text" placeholder="Id"></strong>
+                              </div>
+                              <div><input name="nombres" id="nombre" type="text" placeholder="Nombres"></div>
+                              <div><input name="apellidos" id="apellidos" type="text" placeholder="Apellidos"></div>
+                              <div><input name="direccion" id="direccion" type="text" placeholder="Direccion"></div>
+                              <div><input name="email" id="email" type="text" placeholder="Email"></div>
+                              <div><input name="telefono" id="telefono" type="text" placeholder="Telefono"></div>
+
+
+                            </div>
+                            <div class="col-sm-6">
+                              <h6 class="mb-3">Detalles:</h6>
+                              <div>Factura #:
+                                <strong>#BBB-10010110101938</strong>
+                              </div>
+                              <div>April 30, 2019</div>
+                              <div>Direccion: NYC09090390</div>
+                              <div>Email: guilford@gmail.com</div>
+                              <div>
+                                <strong>Total: $7.477,36</strong>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-responsive-sm">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="center">#</th>
+                                  <th>Item</th>
+                                  <th>Descripcion</th>
+                                  <th class="center">Cantidad</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="center"><select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">0</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+
+                                    </select></td>
+                                  <td class="left">
+                                    <select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">Certificados de estudio</option>
+                                      <option>Certificado de notas</option>
+                                      <option>Certificacion Laboral</option>
+                                      <option>Recibo de pago Matricula</option>
+                                      <option>Recibo de pago Pensión</option>
+                                      <option>Abono de pago Matricula</option>
+                                      <option>Abono de pago Pensión</option>
+
+                                    </select>
+
+                                  </td>
+
+                                  <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
+                                  </td>
+
+                                  <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
+                                
+                                </tr>
+                                <tr>
+                                  <td class="center"><select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">0</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+
+                                    </select></td>
+                                  <td class="left">
+                                    <select class="controls" id="exampleFormControlSelect1">
+                                      <option class="controls">Certificados de estudio</option>
+                                      <option>Certificado de notas</option>
+                                      <option>Certificacion Laboral</option>
+                                      <option>Recibo de pago Matricula</option>
+                                      <option>Recibo de pago Pensión</option>
+                                      <option>Abono de pago Matricula</option>
+                                      <option>Abono de pago Pensión</option>
+
+                                    </select>
+
+                                  </td>
+
+                                  <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
+                                  </td>
+
+                                  <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
+                                 
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="row">
+                           
+                            <div class="col-lg-4 col-sm-5 ml-auto">
+                              <table class="table table-clear">
+                                <tbody>
+                                 
+                                </tbody>
+                              </table>
+                              <a class="btn btn-success" href="#" data-abc="true">
+                                <i class="fa fa-usd"></i> Guardar Solicitud</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!--div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div-->
+
             </div>
           </div>
         </div>
       </main>
+      <!-- Fin contenido de la pagina-->
       <!-- Fin contenido de la pagina-->
     </div>
   </div>
