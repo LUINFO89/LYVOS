@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solicitar Factura</title>
+  <title>Generar Factura</title>
   <!--- Icon Font Awason --->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!--- stylesheet CSS --->
@@ -17,63 +17,63 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-                <!-- Menú de navegación -->
-                <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
-                  <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
-                  <hr class="border border-white">
-  
-                  <ul class="nav flex-column">
-                      <li class="nav-item ">
-                          <a class="nav-link " href="homeBase.html">
-                              <i class="fas fa-home"></i>
-                              Inicio
-                          </a>
-                      </li>
-                      
-                      <li class="nav-item">
-                          <a class="nav-link" href="SolicitarFactura.html">
-                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                              Solicitar Documentos
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="GenerarDocumentos.html">
-                              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
-                              Generar Documentos
-                          </a>
-                      </li>
-                      
-  
-                      <li class="nav-item">
-                          <a class="nav-link" href="ServiciosProductos.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Servicios o productos
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="VerSolictudes.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Ver Solicitudes y actualización de estados
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="CrearEstudiantes.html">
-                              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
-                              Crear Estudiantes
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="PerfilUsuario.html">
-                              <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
-                              Perfil de usuarios
-                          </a>
-                      </li>
-  
-                  </ul>
-                  <hr class="border border-white">
-  
-              </nav>
-              <!-- Fin menú de navegación -->
+      <!-- Menú de navegación -->
+      <nav class="col-lg-3 col-3 navBar bg-green vh-100 position-fixed p-lg-3">
+        <img src="img/logo.jpg" id="logocol" alt="logo" class="img-fluid mx-auto d-block w-50 mt-lg-2 mb-lg-4">
+        <hr class="border border-white">
+
+        <ul class="nav flex-column">
+          <li class="nav-item ">
+            <a class="nav-link " href="homeBase.html">
+              <i class="fas fa-home"></i>
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="SolicitarFactura.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Solicitar Documentos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GenerarDocumentos.html">
+              <i class="fas fa-tasks"></i><!-- Camnbiar icono en Font Awason -->
+              Generar Documentos
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="ServiciosProductos.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Servicios o productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="VerSolictudes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Ver Solicitudes y actualización de estados
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CrearEstudiantes.html">
+              <i class="fas fa-user-cog"></i><!-- Camnbiar icono en Font Awason -->
+              Crear Estudiantes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PerfilUsuario.html">
+              <i class="fas fa-user-circle"></i> <!-- Camnbiar icono en Font Awason -->
+              Perfil de usuarios
+            </a>
+          </li>
+
+        </ul>
+        <hr class="border border-white">
+
+      </nav>
+      <!-- Fin menú de navegación -->
 
       <!-- Cabecera de la página -->
       <header class="col-lg-9 text-white p-0 fixed-top" style="margin-left: 25%">
@@ -94,7 +94,7 @@
           <div class="card">
             <div class="card-body">
               <!-- Inicio contenido main -->
-              <h1>Solicitud de Documentos</h1>
+              <h1>Generar Documentos</h1>
 
               <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Ingrese la busqueda"
@@ -105,7 +105,7 @@
 
               </div>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCrear">
-                Crear Solicitud
+                Crear Facturas
               </button>
 
 
@@ -185,7 +185,7 @@
                       </button>
                       <button type="button" class="btn btn-danger">
                         Delete
-                        </button>
+                      </button>
                     </td>
                   </tr>
                 </tbody>
@@ -206,7 +206,7 @@
                   <div id="ui-view" data-select2-id="ui-view">
                     <div>
                       <div class="card">
-                        <div class="card-header">Numero de Solicitud:
+                        <div class="card-header">Factura Numero:
                           <strong><input type="text"></strong>
                           <a class="btn btn-sm btn-secondary float-right mr-1 d-print-none" href="#"
                             onclick="javascript:window.print();" data-abc="true">
@@ -214,7 +214,8 @@
                           <a class="btn btn-sm btn-info float-right mr-1 d-print-none" href="#" data-abc="true">
                             <i class="fa fa-save"></i> Save</a>
                         </div>
-
+                        <div class="card-header">Numero de Solicitud: <strong><input type="text"></strong></div>
+  
                         <div class="card-body">
                           <div class="row mb-4">
                             <div class="col-sm-2">
@@ -227,13 +228,13 @@
                               <div>Direccion:</div>
                               <div>Email:</div>
                               <div>Telefono:</div>
-
-
-
+  
+  
+  
                             </div>
                             <div class="col-sm-4">
                               <h6 class="mb-2">Datos del cliente</h6>
-
+  
                               <div>
                                 <strong><input name="id" id="identificacion" type="text" placeholder="Id"></strong>
                               </div>
@@ -242,8 +243,8 @@
                               <div><input name="direccion" id="direccion" type="text" placeholder="Direccion"></div>
                               <div><input name="email" id="email" type="text" placeholder="Email"></div>
                               <div><input name="telefono" id="telefono" type="text" placeholder="Telefono"></div>
-
-
+  
+  
                             </div>
                             <div class="col-sm-6">
                               <h6 class="mb-3">Detalles:</h6>
@@ -266,7 +267,8 @@
                                   <th>Item</th>
                                   <th>Descripcion</th>
                                   <th class="center">Cantidad</th>
-                                  
+                                  <th class="right">Precio Unitario</th>
+                                  <th class="right">Total</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -279,7 +281,7 @@
                                       <option>4</option>
                                       <option>5</option>
                                       <option>6</option>
-
+  
                                     </select></td>
                                   <td class="left">
                                     <select class="controls" id="exampleFormControlSelect1">
@@ -290,16 +292,17 @@
                                       <option>Recibo de pago Pensión</option>
                                       <option>Abono de pago Matricula</option>
                                       <option>Abono de pago Pensión</option>
-
+  
                                     </select>
-
+  
                                   </td>
-
+  
                                   <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
                                   </td>
-
+  
                                   <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
-                                
+                                  <td class="center"><input name="precio" id="cantidad" type="text" size="10" .></td>
+                                  <td class="center">$999,00</td>
                                 </tr>
                                 <tr>
                                   <td class="center"><select class="controls" id="exampleFormControlSelect1">
@@ -310,7 +313,7 @@
                                       <option>4</option>
                                       <option>5</option>
                                       <option>6</option>
-
+  
                                     </select></td>
                                   <td class="left">
                                     <select class="controls" id="exampleFormControlSelect1">
@@ -321,30 +324,60 @@
                                       <option>Recibo de pago Pensión</option>
                                       <option>Abono de pago Matricula</option>
                                       <option>Abono de pago Pensión</option>
-
+  
                                     </select>
-
+  
                                   </td>
-
+  
                                   <td class="center"><input name="descripcion" id="descripcion" type="text" size="20" .>
                                   </td>
-
+  
                                   <td class="center"><input name="cantidad" id="cantidad" type="text" size="5" .></td>
-                                 
+                                  <td class="center"><input name="precio" id="cantidad" type="text" size="10" .></td>
+                                  <td class="center">$999,00</td>
                                 </tr>
                               </tbody>
                             </table>
                           </div>
                           <div class="row">
-                           
+                            <div class="col-lg-4 col-sm-5">
+                              <strong>Observaciones:</strong>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </div>
                             <div class="col-lg-4 col-sm-5 ml-auto">
                               <table class="table table-clear">
                                 <tbody>
-                                 
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Subtotal</strong>
+                                    </td>
+                                    <td class="right">$8.497,00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Discount (20%)</strong>
+                                    </td>
+                                    <td class="right">$1,699,40</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>VAT (10%)</strong>
+                                    </td>
+                                    <td class="right">$679,76</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="left">
+                                      <strong>Total</strong>
+                                    </td>
+                                    <td class="right">
+                                      <strong>$7.477,36</strong>
+                                    </td>
+                                  </tr>
                                 </tbody>
                               </table>
                               <a class="btn btn-success" href="#" data-abc="true">
-                                <i class="fa fa-usd"></i> Guardar Solicitud</a>
+                                <i class="fa fa-usd"></i> Guardar Factura</a>
                             </div>
                           </div>
                         </div>
@@ -357,6 +390,8 @@
             </div>
           </div>
         </div>
+        
+         <!-- FIN Modal -->
       </main>
       <!-- Fin contenido de la pagina-->
     </div>
