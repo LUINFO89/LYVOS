@@ -74,3 +74,6 @@ Bajo ninguna circunstancia se permite borrar facturas. Solo se pueden marcar com
 factura bloqueadas:
 deben dejar el comentario de por que la factura fue bloqueada
 Un administrador se encarga de gestionar los usuarios internos e indicar el servicio del cual se encarga (pueden haber múltiples usuarios internos encargados ) y además ejerce control total de la plataforma.
+
+![MockupCole drawio](https://user-images.githubusercontent.com/59453252/158290522-a542e01a-a180-4cc6-95b3-17c053c38489.png)
+
